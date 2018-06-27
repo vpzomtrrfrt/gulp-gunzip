@@ -12,7 +12,7 @@ describe('gulp-gunzip', function () {
       stream.once('data', function (file) {
         file.contents.pipe(es.wait(function (err, data) {
           assert.equal(data, 'File 1\n')
-          assert.equal(file.path, './fixtures/test.txt')
+          assert.equal(file.path, 'fixtures/test.txt')
           done()
         }))
       })
@@ -31,8 +31,8 @@ describe('gulp-gunzip', function () {
       stream.once('data', function (file) {
         file.contents.pipe(es.wait(function (err, data) {
           assert.equal(data, 'File 1\n')
-          assert.equal(file.base, './fixtures/')
-          assert.equal(file.path, './fixtures/test.txt')
+          assert.equal(file.base, 'fixtures')
+          assert.equal(file.path, 'fixtures/test.txt')
           done()
         }))
       })
@@ -77,7 +77,7 @@ describe('gulp-gunzip', function () {
 
       stream.once('data', function (file) {
         assert.equal(file.contents, 'File 1\n')
-        assert.equal(file.path, './fixtures/test.txt')
+        assert.equal(file.path, 'fixtures/test.txt')
         done()
       })
 
@@ -93,8 +93,8 @@ describe('gulp-gunzip', function () {
       var stream = gunzip()
 
       stream.once('data', function (file) {
-        assert.equal(file.base, './fixtures/')
-        assert.equal(file.path, './fixtures/test.txt')
+        assert.equal(file.base, 'fixtures')
+        assert.equal(file.path, 'fixtures/test.txt')
         done()
       })
 
@@ -135,7 +135,7 @@ describe('gulp-gunzip', function () {
       var stream = gunzip()
 
       stream.on('data', function (file) {
-        assert.equal(file.path, './fixtures/test.txt.gz')
+        assert.equal(file.path, 'fixtures/test.txt.gz')
         done()
       })
 

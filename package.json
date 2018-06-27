@@ -1,18 +1,18 @@
 {
-  "name": "gulp-gunzip",
-  "version": "1.0.0",
+  "name": "gulp-gunzip-fork",
+  "version": "2.0.0",
   "description": "Uncompress gzip files in your gulp build pipeline",
   "main": "index.js",
   "dependencies": {
     "through2": "~0.6.5",
-    "vinyl": "~0.4.6"
+    "vinyl": "^2.2.0"
   },
   "devDependencies": {
-    "event-stream": "~3.1.5",
-    "mocha": "~1.18.2",
     "async": "~0.8.0",
-    "lodash": "~2.4.1",
-    "jshint": "~2.5.0"
+    "event-stream": "~3.1.5",
+    "jshint": "^2.9.5",
+    "lodash": "^4.17.10",
+    "mocha": "^5.2.0"
   },
   "scripts": {
     "test": "mocha --reporter spec"
@@ -21,7 +21,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jmerrifield/gulp-gunzip"
+    "url": "https://github.com/vpzomtrrfrt/gulp-gunzip"
   },
   "keywords": [
     "gulpplugin",
@@ -30,7 +30,7 @@
     "gunzip"
   ],
   "bugs": {
-    "url": "https://github.com/jmerrifield/gulp-gunzip/issues"
+    "url": "https://github.com/vpzomtrrfrt/gulp-gunzip/issues"
   },
   "files": [
     "index.js"
